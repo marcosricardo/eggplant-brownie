@@ -3,7 +3,7 @@ import UIKit
 
 let name = "Lasagna"
 let calories:Double = 50.5
-let happiness:Int = 5
+//let happiness:Int = 5
 
 let lasagnaIsVegetable:Bool = false
 
@@ -69,3 +69,40 @@ for nota in notas {
 //print("Média do aluno \(soma / notas.count)")
 
 print("Média do aluno \(Double(soma) / Double(notas.count))")
+
+//optional
+
+class Meal {
+    //var happiness:Int = 5
+    //var name:String = "lasagna"
+    var happiness:Int?
+    var name:String?
+}
+
+let meal = Meal()
+
+//print(meal.happiness)
+//print(meal.name)
+
+meal.happiness = 2
+meal.name = "lasagna"
+
+print(meal.happiness ??  4)
+
+if let name = meal.name {
+  print(name.uppercased())
+}
+
+
+//let happiness = Int("5")
+let happiness = Int("lasagna")
+if let happy = happiness {
+    print("Happiness: \(happy)")
+} else {
+    print("Variável happiness está vazia!")
+}
+
+//optional
+
+
+print("fim")

@@ -102,7 +102,20 @@ if let happy = happiness {
     print("Variável happiness está vazia!")
 }
 
-//optional
+//fim optional
 
+
+class Meal2 {
+    var happiness:Int
+    var name:String
+    
+    //inicializador da classe
+    init(name:String, happiness:Int) {
+        self.name = name
+        self.happiness = happiness
+    }
+}
+
+let lasagna = Meal2(name: "Lasagna", happiness: 5)
 
 print("fim")

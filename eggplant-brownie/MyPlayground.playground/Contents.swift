@@ -108,14 +108,44 @@ if let happy = happiness {
 class Meal2 {
     var happiness:Int
     var name:String
+    //var items:Array<Item> = []
+    var items = Array<Item>()
     
     //inicializador da classe
     init(name:String, happiness:Int) {
         self.name = name
         self.happiness = happiness
     }
+    
+    func allCalories() -> Double{
+        var total:Double  = 0.0
+        for i in items {
+            total += i.calories
+        }
+        
+        return total
+    }
+}
+
+class Item {
+    var name:String
+    var calories:Double
+    
+    //inicializador da classe Item
+    init(name:String, calories:Double) {
+        self.name = name
+        self.calories = calories
+    }
 }
 
 let lasagna = Meal2(name: "Lasagna", happiness: 5)
+
+let Item1 = Item(name:"mozzarella", calories: 200)
+let Item2 = Item(name:"ground beef", calories: 200)
+
+lasagna.items.append(Item1)
+lasagna.items.append(Item2)
+
+print("Total calories Meal2 \(lasagna.allCalories())")
 
 print("fim")

@@ -23,6 +23,14 @@ class ViewController: UIViewController {
         if  let happiness = Int(happinessField!.text!) {
             let meal = Meal(name: name, happiness: happiness)
             print("eaten \(meal.name) with happiness \(meal.happiness)!");
+            
+            /* navigationController é opcional "navigationController?.popViewController(animated: true)", isto evita crash validando a variável navigationController
+            */
+            if let navigation = navigationController {
+                //o método é utilizado para apagar determinada View em tempo de execução.
+                navigation.popViewController(animated: true)
+            }
+            
         }
     }
 }

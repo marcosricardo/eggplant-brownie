@@ -8,23 +8,25 @@
 
 import UIKit
 
-class MealsTableViewController : UITableViewController{
+class MealsTableViewController : UITableViewController, AddAMealDelegate{
     
     //array de Meals
     //var meals = [Meal(name: "Lasagna", happiness: 5), Meal(name: "Spaghetti", happiness: 5), Meal(name: "Pizza", happiness: 5)]
     var meals:Array<Meal> = []
     
     //adiciona item passado por parâmetro no array meals 
-    func add(meal:Meal) {
+    func add(_ meal:Meal) {
         meals.append(meal)
         tableView.reloadData()
     }
    
     //Este método é executado pouco antes da troca de Views, quando a mesma é solicitada pelo usuário.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let view = segue.destination as! ViewController
-        //preenche a propriedade mealsTable da classe ViewController com a classe MealsTableViewController (em questão)
-        view.mealsTable = self
+        if(segue.identifier == "addMeal"){
+            let view = segue.destination as! ViewController
+            //preenche a propriedade mealsTable da classe ViewController com a classe MealsTableViewController (em questão)
+            view.delegate = self
+        }
     }
     
     

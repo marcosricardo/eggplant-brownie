@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var nameField : UITextField?
     @IBOutlet var happinessField : UITextField?
     //instância objeto do tipo MealsTableViewController
-    var mealsTable : MealsTableViewController?
+    var delegate : AddAMealDelegate?
 
   
     @IBAction func add(){
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             print("eaten \(meal.name) with happiness \(meal.happiness)!");
             
             //adiciona meal acessando func add da classe MealsTableViewController
-            mealsTable!.add(meal: meal)
+            delegate!.add(meal)
             
             /* navigationController é opcional "navigationController?.popViewController(animated: true)", isto evita crash validando a variável navigationController
             */

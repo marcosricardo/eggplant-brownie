@@ -12,6 +12,7 @@
 		8D10CC2F222F674F009DCC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D10CC2D222F674F009DCC30 /* LaunchScreen.storyboard */; };
 		8D10CC3A222F674F009DCC30 /* eggplant_brownieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10CC39222F674F009DCC30 /* eggplant_brownieTests.swift */; };
 		8D10CC45222F674F009DCC30 /* eggplant_brownieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10CC44222F674F009DCC30 /* eggplant_brownieUITests.swift */; };
+		8D194B5E22473EF000095E38 /* AddAMealDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D194B5D22473EF000095E38 /* AddAMealDelegate.swift */; };
 		8D5FC15A22356C9200ED2E63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5FC15922356C9200ED2E63 /* Main.storyboard */; };
 		8D971B9722372BED0000674C /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D971B9622372BED0000674C /* MealsTableViewController.swift */; };
 		8DB189A8223567B100C00CF3 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB189A7223567B100C00CF3 /* Meal.swift */; };
@@ -48,6 +49,7 @@
 		8D10CC40222F674F009DCC30 /* eggplant-brownieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eggplant-brownieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D10CC44222F674F009DCC30 /* eggplant_brownieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggplant_brownieUITests.swift; sourceTree = "<group>"; };
 		8D10CC46222F674F009DCC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D194B5D22473EF000095E38 /* AddAMealDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAMealDelegate.swift; sourceTree = "<group>"; };
 		8D5C1E312231FB2C003CF022 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8D5FC15922356C9200ED2E63 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8D971B9622372BED0000674C /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		8DB189A52235679000C00CF3 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				8D194B5D22473EF000095E38 /* AddAMealDelegate.swift */,
 				8DB189A7223567B100C00CF3 /* Meal.swift */,
 				8DB189A92235684100C00CF3 /* Item.swift */,
 			);
@@ -296,6 +299,7 @@
 				8DB189A8223567B100C00CF3 /* Meal.swift in Sources */,
 				8DB189AC223569F200C00CF3 /* ViewController.swift in Sources */,
 				8D10CC25222F674E009DCC30 /* AppDelegate.swift in Sources */,
+				8D194B5E22473EF000095E38 /* AddAMealDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -94,7 +94,7 @@
                     <navigationItem key="navigationItem" id="EMz-A7-4B8">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="61y-x8-GWh">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="Zvq-V3-MqE"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="addMeal" id="Zvq-V3-MqE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
